@@ -1,0 +1,3 @@
+watch date
+top
+while true; do echo "Sleeping..."; sleep 2; done;
