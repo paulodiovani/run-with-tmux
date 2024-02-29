@@ -2,6 +2,11 @@
 
 A bash script to run concurrent applications in tmux panels.
 
+Note: This script simply starts your configured commands in panels, then makes the layout even.
+  If you need a more fine-grained control of your commands, consider using [tmuxnator] instead.
+
+[tmuxnator]: https://github.com/tmuxinator/tmuxinator
+
 ## Dependencies
 
 - Bash -- https://www.gnu.org/software/bash/ (you probably already have it)
@@ -35,9 +40,10 @@ Run the `start.sh` script with the `*.commands` file as argument.
 ./start.sh sample.commands
 ```
 
-Once running, you can navigate through panels as always (default: `Ctrl+b, arrows`).
+Once running, you can navigate through panels as always (default: `Ctrl + b, arrows`).
 
-Type `Ctrl+C` in a panel to stop the command/application, which will also close the panel.
+Type `Ctrl + c` in a panel to stop the command/application (might vary with some commands),
+    stopping a command will also close the current panel.
 
 ## Screenshots
 
